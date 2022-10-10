@@ -98,9 +98,8 @@ final class WelcomeViewController: UIViewController {
         incrementButton.layer.changeShadow()
         let generator = UIImpactFeedbackGenerator(style: .light)
         generator.impactOccurred()
-        UIView.transition(with: commentView, duration: 0.5, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: commentView, duration: 0.4, options: .transitionCrossDissolve, animations: {
             self.updateUI()
-            
         }) { completion in
             self.incrementButton.isEnabled = true
             self.incrementButton.layer.appplyShadow()
